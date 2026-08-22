@@ -1,1 +1,5 @@
-# ImGui-Android-Mod-Menu
+
+
+const-string v0, "Tool"
+
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
