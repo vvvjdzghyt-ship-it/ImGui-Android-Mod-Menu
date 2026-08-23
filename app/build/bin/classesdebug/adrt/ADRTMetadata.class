@@ -1,0 +1,61 @@
+.class public Ladrt/ADRTMetadata;
+.super Ljava/lang/Object;
+.source "ADRTMetadata.java"
+
+
+# static fields
+.field public static FILE_CALLED_FILES:[[I
+
+.field public static FILE_CALLING_FILES:[[I
+
+.field public static FILE_IDS:[I
+
+.field public static FILE_NAMES:[Ljava/lang/String;
+
+
+# direct methods
+.method static final constructor <clinit>()V
+    .registers 4
+
+    const/4 v3, 0x2
+
+    new-array v0, v3, [I
+
+    fill-array-data v0, :array_20
+
+    sput-object v0, Ladrt/ADRTMetadata;->FILE_IDS:[I
+
+    new-array v0, v3, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    const-string v2, "com/android/support/BuildConfig.java"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "com/android/support/R.java"
+
+    aput-object v2, v0, v1
+
+    sput-object v0, Ladrt/ADRTMetadata;->FILE_NAMES:[Ljava/lang/String;
+
+    new-array v0, v3, [[I
+
+    sput-object v0, Ladrt/ADRTMetadata;->FILE_CALLED_FILES:[[I
+
+    new-array v0, v3, [[I
+
+    sput-object v0, Ladrt/ADRTMetadata;->FILE_CALLING_FILES:[[I
+
+    return-void
+
+    nop
+
+    :array_20
+    .array-data 4
+        0x13d
+        0x13e
+    .end array-data
+.end method
